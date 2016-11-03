@@ -170,6 +170,12 @@ namespace RSLoad
             }
         }
 
+        [TestMethod]
+        public void I_Have_To_Fail()
+        {
+            Assert.Fail("I really need to fail");
+        }
+
         private void GetReportItemAndExpand(string name, string propertiesToExpand)
         {
             string report = ContentManager.GetNextReport();
