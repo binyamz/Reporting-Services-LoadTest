@@ -118,7 +118,7 @@ namespace RSLoad
         }
 
         [TestMethod]
-        public void ListDataSets()
+         public void ListDataSets()
         {
             using (Measure("ListDataSets"))
             {
@@ -173,7 +173,7 @@ namespace RSLoad
         [TestMethod]
         public void I_Have_To_Fail()
         {
-            Assert.Fail("I really need to fail");
+            Assert.Fail("I really need to fail again");
         }
 
         private void GetReportItemAndExpand(string name, string propertiesToExpand)
