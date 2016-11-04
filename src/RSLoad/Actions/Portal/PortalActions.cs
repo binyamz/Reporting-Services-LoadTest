@@ -96,7 +96,7 @@ namespace RSLoad
             using (Measure("ListKpis"))
             {
                 ContentManager.BrowseCatalogItems(ContentManager.WorkingFolder, "Kpi");
-            }
+             }
         }
 
         [TestMethod]
@@ -106,7 +106,7 @@ namespace RSLoad
             {
                 ContentManager.BrowseCatalogItems(ContentManager.WorkingFolder, "DataSource");
             }
-        }
+e        }
 
         [TestMethod]
         public void ListFolders()
@@ -116,7 +116,7 @@ namespace RSLoad
                 ContentManager.BrowseCatalogItems(ContentManager.WorkingFolder, "Folder");
             }
         }
-
+n
         [TestMethod]
          public void ListDataSets()
         {
@@ -126,7 +126,7 @@ namespace RSLoad
             }
         }
 
-        [TestMethod]
+o        [TestMethod]
         public void GetReportItem()
         {
             string report = ContentManager.GetNextReport();
@@ -136,7 +136,7 @@ namespace RSLoad
             }
         }
 
-        [TestMethod]
+         [TestMethod]
         public void GetReportItemExpandDataSources()
         {
             GetReportItemAndExpand("GetReportItemExpandDataSources", "DataSources");
@@ -173,7 +173,7 @@ namespace RSLoad
         [TestMethod]
         public void I_Have_To_Fail()
         {
-            Assert.Fail("I really need to fail again");
+            Assert.Fail("I really need to fail again one more time");
         }
 
         private void GetReportItemAndExpand(string name, string propertiesToExpand)
